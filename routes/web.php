@@ -19,5 +19,5 @@ Route::get('/', function () {
 });
 
 Route::get('/landingpage', [PaginaController::class, 'inicio']);
-
 Route::get('/contacto/{codigo?}', [PaginaController::class, 'formulario']);
+Route::post("/recibe-informacion", [PaginaController::class, 'recibeForm']);
